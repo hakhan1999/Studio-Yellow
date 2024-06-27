@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html {
+    font-size: 0.8333333333vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 1.3333334vw;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 4.102564103vw;
+    }
+}
+
+body {
+    background: #000;
+    color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-inner-section video {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-inner-section {
+    position: relative;
+}
+
+section.about {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3.75rem 0;
+
+}
+
+section.about h1 {
+    font-size: 10.625rem;
+    line-height: 100%;
+    font-weight: 900;
+}
+
+.video-popup-inner-section img {
+    height: 40.625rem;
+}
+
+.video-popup-inner-section {
+    display: flex;
+    justify-content: center;
+}
+
+section.video-popup {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 6.25rem 0;
+}
+
+.play-btn {
+    position: absolute;
+}
+
+h2.global-heading {
+    font-size: 6.25rem;
+    color: gray;
+    letter-spacing: 0.938rem;
+}
+
+p.global-subheading {
+    color: #fd0;
+    letter-spacing: 0.313rem;
+    font-size: 0.938rem;
+}
+
+.highlights,
+.knowledge,
+.trusted {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.highlights-inner-section,
+.knowledge-inner-section {
+    padding: 6.25rem;
+    width: 100%;
+}
+
+.highlights-cards {
+    display: flex;
+    padding: 4.375rem 0;
+    justify-content: space-between;
+    gap: 6.25rem;
+}
+
+.highlights .card img {
+    width: 50rem;
+    border-radius: 1.25rem;
+    height: 31.25rem;
+    object-fit: cover;
+}
+
+.mt-card1 {
+    margin-top: 6.25rem;
+}
+
+.mt-card1 {
+    margin-top: 6.25rem;
+}
+
+.heading-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content {
+    /* padding: 0px 70px 0px 100px; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.global-h3 {
+    color: #989898;
+    font-weight: 600;
+    letter-spacing: 0.188rem;
+    font-size: 1.563rem;
+    font-weight: 500;
+}
+
+.global-para {
+    color: #c8c8c8;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    font-weight: 500;
+}
+
+.view-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    background: #202020;
+    padding: 0.438rem 0.625rem;
+    border-radius: 0.313rem;
+    transition: all 0.4s ease-out;
+    width: 7.5rem;
+    justify-content: center;
+}
+
+.view-btn:hover {
+    background: #ffdd00;
+    cursor: pointer;
+    transition: all 0.4s ease-out
+}
+
+.view-btn:hover span {
+    color: #000;
+}
+
+.view-btn:hover p {
+    color: #000;
+    font-weight: 600;
+}
+
+.view-btn span {
+    color: #c8c8c8;
+}
+
+.global-view-btn {
+    font-size: 0.938rem;
+    color: #c8c8c8;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 31.25rem;
+}
+
+.banner-inner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    width: 100%;
+}
+
+.banner::before {
+    content: '';
+    background-image: url(assets/logo-big.svg);
+    background-position: center center;
+    background-size: 100%;
+    width: 31.25rem;
+    height: 100%;
+    position: absolute;
+    right: -12%;
+    background-repeat: no-repeat;
+}
+
+.banner::after {
+    content: '';
+    background-image: url(assets/logo-big.svg);
+    background-position: center center;
+    background-size: 100%;
+    width: 31.25rem;
+    height: 100%;
+    position: absolute;
+    left: -12%;
+    background-repeat: no-repeat;
+}
+
+.knowledge .card img {
+    width: 31.25rem;
+    border-radius: 1.25rem;
+    height: 37.5rem;
+    object-fit: cover;
+}
+
+.knowledge-cards {
+    display: flex;
+    padding-top: 3.75rem;
+}
+
+.knowledge-cards .card-main {
+    width: 33.33%;
+}
+
+
+.mt-kn-1 {
+    margin-top: 18.75rem;
+}
+
+.mt-kn-2 {
+    margin-top: 9.375rem;
+}
+
+
+.trusted-inner-section,
+.global-inner-section,
+.solutions-inner-section,
+.review-inner-section,
+.work-inner-section {
+    padding: 3.75rem 6.25rem;
+    width: 100%;
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 4.375rem 0;
+}
+
+.partners-grid img {
+    width: 10.625rem;
+    border-radius: 0.938rem;
+}
+
+.map {
+    padding: 4.375rem 0;
+}
+
+.map img {
+    width: 100%;
+}
+
+.solutions-h2 {
+    font-size: 5.625rem;
+    letter-spacing: 0.938rem;
+}
+
+.inner-row {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+    align-items: center;
+}
+
+.solutions-row {
+    padding: 3.125rem 0;
+    position: relative;
+}
+
+.inner-row .global-para {
+    width: 20%;
+}
+
+h2.solutions-h2 {
+    min-width: 56.25rem;
+}
+
+.vertical-text {
+    position: absolute;
+    right: -20%;
+    transform: rotate(-270deg);
+    top: 50%;
+}
+
+.vertical-text h1 {
+    transform: rotate(45deg);
+}
+
+.vertical-text h2 {
+    font-weight: 100;
+    font-size: 1.875rem;
+    letter-spacing: 0.313rem;
+    color: gray;
+}
+
+.reviews-row {
+    display: flex;
+    justify-content: center;
+    gap: 3.125rem;
+    text-align: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    width: 25%;
+}
+
+.work-grid {
+    padding: 4.375rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.work-grid img {
+    width: 19%;
+    border-radius: 1.25rem;
+    transition: all 0.3s ease-out;
+}
+
+.work-grid img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+}
+
+.footer-inner-section {
+    background: #fff;
+}
+
+section.footer {
+    position: relative;
+}
+
+.footer-heading h2 {
+    text-align: center;
+    font-size: 12.5rem;
+    font-weight: 900;
+    color: #080808;
+}
+
+.footer-heading {
+    position: absolute;
+    top: -12.063rem;
+    width: 100%;
+}
+
+.light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.work-inner-section {
+    margin-bottom: 12.5rem;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+}
+
+.inner-quick-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-img {
+    width: 60%;
+}
+
+.footer-quick-links {
+    width: 50%;
+}
+
+.inner-quick-links h3 {
+    color: #000;
+    letter-spacing: 0.125rem;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+ul.footer-menu a {
+    color: gray;
+    font-size: 1rem;
+    transition: all 0.4s ease-out;
+    letter-spacing: 0.063rem;
+}
+
+ul.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 1.25rem 0;
+}
+
+ul.footer-menu a:hover {
+    transition: all 0.4s ease-out;
+    color: #000;
+}
+
+.footer-copyright p {
+    font-size: 1.125rem;
+    color: #000;
+    padding-top: 3.125rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+}
+
+.footer-inner-section {
+    padding: 6.25rem;
+}
+
+.globe-icon,
+.envelope-icon {
+    position: fixed;
+}
+
+.envelope-icon {
+    bottom: 1.875rem;
+    right: 3.125rem;
+    background: #ffdd00;
+    z-index: 2;
+    padding: 0.625rem 0.938rem;
+    border-radius: 0.313rem;
+    transition: all 0.4s ease-out;
+}
+
+.globe-icon {
+    bottom: 30px;
+    left: 50px;
+    background: #202020;
+    z-index: 2;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.313rem;
+    transition: all 0.4s ease-out;
+}
+
+.globe-icon img {
+    filter: invert(1);
+}
+
+.globe-icon:hover {
+    transition: all 0.4s ease-out;
+    background: #ffdd00;
+    cursor: pointer;
+}
+
+.globe-icon:hover img {
+    filter: invert(0);
+}
+
+.envelope-icon:hover {
+    transition: all 0.4s ease-out;
+    background: #202020;
+    cursor: pointer;
+}
+
+.envelope-icon:hover img {
+    filter: invert(1);
+}
+
+/* Animated Slider CSS  */
+
+.slider-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    background-color: #00000094;
+}
+
+.working-area {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 120rem;
+    height: 100vh;
+    position: relative;
+}
+
+.nav {
+    padding: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: all;
+}
+
+.working-area img {
+    width: 3.75rem;
+}
+
+.working-area a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 4.375rem;
+}
+
+.menu-item img {
+    width: 1.875rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.313rem;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0, -50%);
+    align-items: center;
+}
+
+.hero-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading1 h1 {
+    color: #fff;
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.heading1 h1:nth-child(1) {
+    top: 0;
+}
+
+.hero-left .heading1 {
+    height: 6vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-left button {
+    padding: 1vw 3vw;
+    font-size: 2vw;
+    background-color: #fff;
+    font-weight: 500;
+    border: none;
+    margin: 2vw 0;
+    text-transform: uppercase;
+    pointer-events: all;
+    width: 25%;
+    margin: 1.25rem auto;
+}
+
+.hero-right {
+    width: 20%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+
+.hero-right p {
+    text-align: right;
+    font-weight: 500;
+}
+
+.hero-right .imageDiv {
+    width: 100%;
+    height: 12.5rem;
+    margin: 1.875rem 0;
+    background-image: url(assets/work-9.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-right p:nth-child(3) {
+    margin-bottom: 5rem;
+}
+
+.back image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Highlights Animated Section  */
+
+
+.highlights2-inner-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-left {
+    width: 45%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.highlights-right {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.highlights-right .images {
+    width: 90%;
+    height: 90%;
+}
+
+.highlights-left-elem {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights-right .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-heading h2 {
+    cursor: url(assets/torch.png), auto;
+    transition: all 0.5s ease-out;
+}
+
+.footer-heading:hover .light {
+    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 0.95) 15%);
+}
+
+.footer-heading:hover h2 {
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
